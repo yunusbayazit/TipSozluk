@@ -31,12 +31,27 @@ public class MainActivity extends AppCompatActivity{
         setSupportActionBar(toolbar);
         Kelimeler.add(new Kelime("Ceviri", "Kelime"));
         Kelimeler.add(new Kelime("Ceviri","Kelime"));
-        Kelimeler.add(new Kelime("Ceviri","Kelime"));
-        Kelimeler.add(new Kelime("Ceviri","Kelime"));
-        Kelimeler.add(new Kelime("Ceviri","Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
         Kelimeler.add(new Kelime("Ceviri","Kelime"));
         Kelimeler.add(new Kelime("Ceviri","Kelime"));
         Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+        Kelimeler.add(new Kelime("Ceviri", "Kelime"));
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -48,8 +63,11 @@ public class MainActivity extends AppCompatActivity{
         });
 
         final ListView listemiz = (ListView) findViewById(R.id.left_drawer_list);
+        final ListView celistemiz = (ListView) findViewById(R.id.ceviriler_list);
+
         historyAdapter adaptorumuz=new historyAdapter(this, Kelimeler);
         listemiz.setAdapter(adaptorumuz);
+        celistemiz.setAdapter(adaptorumuz);
     }
 
     @Override
