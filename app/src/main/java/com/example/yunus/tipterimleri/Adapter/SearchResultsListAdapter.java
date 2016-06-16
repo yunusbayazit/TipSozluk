@@ -10,7 +10,6 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
 import com.arlib.floatingsearchview.util.Util;
-import com.example.yunus.tipterimleri.ColorWrapper;
 import com.example.yunus.tipterimleri.R;
 
 import java.util.ArrayList;
