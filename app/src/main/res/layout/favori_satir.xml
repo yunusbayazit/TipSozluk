@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="0.2">
+    <TextView
+        android:id="@+id/cevirifavori"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:text="Ceviri"
+        android:layout_marginLeft="3dp"
+        />
+    <TextView
+        android:id="@+id/kelimefavori"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:padding="5dp"
+        android:layout_marginLeft="3dp"
+        android:text="Kelime"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter"
+    android:padding="10dp"
+    android:id="@+id/favoriButton"
+    />
+
+    </LinearLayout>
+</LinearLayout>

@@ -2,17 +2,39 @@ package com.example.yunus.tipterimleri.Model;
 
 import android.os.Parcel;
 
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
 import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion;
+import com.google.gson.annotations.Expose;
 
 /**
  * Created by yunus on 22.04.2016.
  */
-public class Kelime implements SearchSuggestion {
+@Table(name = "Kelime")
+public class Kelime extends Model implements SearchSuggestion {
+    public Kelime() {
+    }
+
+    @Expose
+    @Column(name = "kelime_adi")
     private String kelime_adi;
+    @Expose
+    @Column(name = "ceviri")
     private String ceviri;
+
+    public Kelime(String kelime_adi, int id) {
+        this.kelime_adi = kelime_adi;
+        this.id = id;
+    }
+
+    @Expose
+    @Column(name = "kelime_id")
+    private int id;
+
     private boolean mIsHistory = false;
 
-    public int getId() {
+    public int getIdi() {
         return id;
     }
 
@@ -28,7 +50,7 @@ public class Kelime implements SearchSuggestion {
         this.kelime_adi = kelime_adi;
     }
 
-    private int id;
+
 
 
 
@@ -59,6 +81,10 @@ public class Kelime implements SearchSuggestion {
     @Override
     public String getBody() {
         return kelime_adi;
+    }
+
+    public int getid() {
+        return id;
     }
 
     @Override

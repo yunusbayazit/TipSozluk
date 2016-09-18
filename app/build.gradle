@@ -11,6 +11,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -29,4 +34,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.squareup.retrofit:retrofit:2.0.0-beta1'
     compile 'com.squareup.retrofit:converter-gson:2.0.0-beta1'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+
 }
